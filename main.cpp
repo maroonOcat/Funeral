@@ -1,14 +1,18 @@
-// main.cpp
+// Main.cpp
+#include "stdafx.h"
+#include "Header.h"
 #include <iostream>
-using namespace std;
+#include <vector>
+#include <list>
+#include <string>
 
 int main()
 {
-	
-	cout << "We are starting our project!";
-
-	system("pause");
+	//Функция setlocale() задаёт локализацию программы.
+	setlocale(LC_ALL, "rus");
+	UserInterface theUserInterface;
+	theUserInterface.interact();
 	return 0;
-
 }
+//конец Main.cpp
 
