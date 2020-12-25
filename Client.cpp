@@ -1,0 +1,26 @@
+//Client.cpp
+#include "stdafx.h"
+#include "Header.h"
+
+//методы класса Client
+//в конструкторе задаём имя клиента и номер телефона
+Client::Client(string n, string cl) : name(n), phoneNumber(cl)
+{
+	/* тут пусто */
+}
+//---------------------------------------------------------
+Client::~Client() // деструктор
+{
+	/* тут тоже пусто */
+}
+//---------------------------------------------------------
+string Client::getPhoneNumber() // возвращает номер телефона клиента
+{
+	return phoneNumber;
+}
+//--------------------------------------------------------
+string Client::getName() // возвращает имя клиента
+{
+	return name;
+}
+//конец Client.cpp
